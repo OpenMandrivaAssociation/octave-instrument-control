@@ -2,9 +2,9 @@
 
 Summary:	Low level I/O functions for several interfaces with Octave
 Name:		octave-%{octpkg}
-Version:	0.7.1
+Version:	0.8.0
 Release:	1
-Source0:	http://downloads.sourceforge.net/octave/%{octpkg}-%{version}.tar.gz
+Source0:	https://downloads.sourceforge.net/octave/%{octpkg}-%{version}.tar.gz
 License:	GPLv3+
 Group:		Sciences/Mathematics
 Url:		https://octave.sourceforge.io/%{octpkg}/
