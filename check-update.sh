@@ -1,3 +1,4 @@
 #!/bin/sh
-curl https://octave.sourceforge.io/instrument-control/index.html 2>/dev/null | grep -A1 "<dt>Version</dt>" |sed -ne 's,</dd>.*,,;s,.*<dd>,,p'
+package=instrument-control
+curl -L https://gnu-octave.github.io/packages/${package}/ 2>/dev/null |sed -ne "s,.*${package}-,,;s,\.tar.\gz,,p" |head -n1
 

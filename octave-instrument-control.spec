@@ -7,7 +7,7 @@ Release:	1
 Source0:	https://downloads.sourceforge.net/octave/%{octpkg}-%{version}.tar.gz
 License:	GPLv3+
 Group:		Sciences/Mathematics
-Url:		https://octave.sourceforge.io/%{octpkg}/
+Url:		https://packages.octave.org/%{octpkg}/
 
 BuildRequires:	octave-devel >= 3.8.0
 BuildRequires:	pkgconfig(libtirpc)
@@ -20,8 +20,6 @@ Requires(postun): octave
 %description
 Low level I/O functions for serial, i2c, parallel, tcp, gpib, vxi11 and
 usbtmc interfaces.
-
-This package is part of community Octave-Forge collection.
 
 %files
 %license COPYING
