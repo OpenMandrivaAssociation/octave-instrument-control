@@ -1,15 +1,15 @@
 %global octpkg instrument-control
 
 Summary:	Low level I/O functions for several interfaces with Octave
-Name:		octave-%{octpkg}
+Name:		octave-instrument-control
 Version:	0.8.0
-Release:	1
-Source0:	https://downloads.sourceforge.net/octave/%{octpkg}-%{version}.tar.gz
+Release:	2
 License:	GPLv3+
 Group:		Sciences/Mathematics
-Url:		https://packages.octave.org/%{octpkg}/
+Url:		https://packages.octave.org/instrument-control/
+Source0:	https://downloads.sourceforge.net/octave/instrument-control-%{version}.tar.gz
 
-BuildRequires:	octave-devel >= 3.8.0
+BuildRequires:  octave-devel >= 4.0.0
 BuildRequires:	pkgconfig(libtirpc)
 
 Requires:	octave(api) = %{octave_api}
@@ -18,24 +18,21 @@ Requires(post): octave
 Requires(postun): octave
 
 %description
-Low level I/O functions for serial, i2c, parallel, tcp, gpib, vxi11 and
-usbtmc interfaces.
+Low level I/O functions for serial, i2c, parallel, tcp, gpib, vxi11,
+udp and usbtmc interfaces.
 
 %files
 %license COPYING
 %doc NEWS
-%dir %{octpkglibdir}
-%{octpkglibdir}/*
 %dir %{octpkgdir}
 %{octpkgdir}/*
+%dir %{octpkglibdir}
+%{octpkglibdir}/*
 
 #---------------------------------------------------------------------------
 
 %prep
 %autosetup -p1 -n %{octpkg}-%{version}
-
-# remove backup files
-#find . -name \*~ -delete
 
 %build
 %set_build_flags
