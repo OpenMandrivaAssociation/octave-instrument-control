@@ -2,7 +2,7 @@
 
 Summary:	Low level I/O functions for several interfaces with Octave
 Name:		octave-instrument-control
-Version:	0.9.2
+Version:	0.9.3
 Release:	1
 License:	GPLv3+
 Group:		Sciences/Mathematics
