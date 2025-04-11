@@ -3,7 +3,7 @@
 Summary:	Low level I/O functions for several interfaces with Octave
 Name:		octave-instrument-control
 Version:	0.9.4
-Release:	1
+Release:	2
 License:	GPLv3+
 Group:		Sciences/Mathematics
 Url:		https://packages.octave.org/instrument-control/
@@ -35,6 +35,8 @@ udp and usbtmc interfaces.
 %autosetup -p1 -n %{octpkg}-%{version}
 
 %build
+export CC=gcc
+export CXX=g++
 %set_build_flags
 %octave_pkg_build
 
