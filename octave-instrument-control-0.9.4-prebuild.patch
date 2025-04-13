@@ -1,0 +1,11 @@
+--- a/src/vxi11/Makefile.in
++++ b/src/vxi11/Makefile.in
+@@ -24,7 +24,7 @@ endif
+ 
+ OBJ += $(VXI) $(VXCLASS)
+ 
+-default: all
++default: prebuild all
+ 
+ $(RPC_GENERATED_FILES): vxi11.x
+ 	$(RPCGEN) $(RPCGENOPTS) vxi11.x
