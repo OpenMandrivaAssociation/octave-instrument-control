@@ -19,6 +19,7 @@ Requires(postun): octave
 
 %patchlist
 octave-instrument-control-0.9.4-prebuild.patch
+octave-instrument-control-0.9.5-fix_metainfo_spell.patch
 
 %description
 Low level I/O functions for serial, i2c, parallel, tcp, gpib, vxi11,
@@ -31,6 +32,7 @@ udp and usbtmc interfaces.
 %{octpkgdir}/*
 %dir %{octpkglibdir}
 %{octpkglibdir}/*
+%{_metainfodir}/*.metainfo.xml
 
 #---------------------------------------------------------------------------
 

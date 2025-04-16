@@ -1,0 +1,11 @@
+--- a/octave-instrument-control.metainfo.xml
++++ b/octave-instrument-control.metainfo.xml
+@@ -28,7 +28,7 @@ without any warranty.
+     <keyword>communication</keyword>
+   </keywords>
+   <url type="homepage">https://gnu-octave.github.io/packages/instrument-control/</url>
+-  <url type="bugtracker">https://savannah.octave.org/?Action=get&Format=HTMLCSS&Title=[octave%20forge]%20(instrument-control)</url>
++  <url type="bugtracker">https://savannah.octave.org/?Action=get&amp;Format=HTMLCSS&amp;Title=[octave%20forge]%20(instrument-control)</url>
+   <project_license>GPL-3.0+</project_license>
+   <developer_name>Octave-Forge Community</developer_name>
+   <update_contact>octave-maintainers@gnu.org</update_contact>
